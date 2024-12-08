@@ -16,7 +16,8 @@ public class Game {
         for (Player player : playersList) {
             if (player.getName().equals(PlayerName1)) {
                 player1 = player;
-            } else if (player.getName().equals(PlayerName2)) {
+            }
+            if (player.getName().equals(PlayerName2)) {
                 player2 = player;
             }
         }

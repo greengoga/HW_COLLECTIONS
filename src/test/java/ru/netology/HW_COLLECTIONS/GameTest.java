@@ -79,4 +79,13 @@ class GameTest {
                 () -> game.round("QQQ", "DDD")
         );
     }
+
+    @Test
+    public void shouldThrowExceptionIfBothNotRegistered() {
+        Game game = new Game();
+
+        Assertions.assertThrows(NotRegisteredException.class,
+                () -> game.round("QQQ", "DDD")
+        );
+    }
 }
